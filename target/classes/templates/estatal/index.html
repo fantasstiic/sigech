@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/layout}">
+<head>
+    <title>Plataforma estatal</title>
+</head>
+<body>
+<div layout:fragment="content" th:remove="tag">
+	<div class="row">
+    <h1>Plataforma estatal</h1>
+    <p><a href="/" th:href="@{/}">Regresar a pagina principal</a></p>
+    <th:block th:replace="fragments/footer :: footer"/>
+    </div>
+</div>
+</body>
+</html>

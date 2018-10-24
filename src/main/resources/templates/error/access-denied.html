@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/layout}">
+<head>
+    <title>Acceso denegado</title>
+</head>
+<body>
+<div layout:fragment="content" th:remove="tag">
+    <div class="row">
+    <h1>Acceso denegado, no cuentas con el rol de ADMIN, contacta con tu administrador.</h1>
+    <th:block th:replace="fragments/footer :: footer"/>
+    </div>
+</div>
+</body>
+</html>

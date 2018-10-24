@@ -1,0 +1,56 @@
+img{
+	display: block;
+    margin: auto;
+    margin-top: 12%;
+}
+
+h3{
+	text-align: center;
+	font-family:Gothambold;
+}
+
+h4{
+	text-align: center;
+	font-family:GothamBook;
+}
+
+button{
+	width: 100%;
+    margin-top: 2%;
+    background-color: #7B7C80;
+}
+
+.buttonone{
+	margin-top: 4%;
+}
+
+.buttontwo{
+	margin-top: 2.5%;
+}
+
+.buttonone:hover { 
+    background-color: #4BA84F;
+  
+}
+
+.buttontwo:hover { 
+    background-color: #007577;
+}
+
+a{
+	color:white;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.modal {
+    top: 20%;
+}
+
+h2{
+	text-align: center;
+}
+

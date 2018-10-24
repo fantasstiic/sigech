@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Sistema - SIGECH
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: ErickJesￃﾺs
+Implementation-Vendor-Id: com.rrsol.gegov.security.formlogin
+Build-Jdk: 1.8.0_181
+Implementation-URL: http://projects.spring.io/spring-boot/SIGECH/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

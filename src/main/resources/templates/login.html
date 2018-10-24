@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org"
+	layout:decorate="~{fragments/layout}">
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" th:href="@{css/login.css}" />
+</head>
+<body>
+	<div layout:fragment="content" th:remove="tag">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<image th:src="@{img/LogoSIGECH.svg}" />
+			</div>
+			<div class="col-md-4 col-md-offset-4">
+				<div class="panel panel-default">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
+							<h4>Inicia sesión para continuar</h4>
+							<form th:action="@{/login}" method="post">
+								<div class="dialog-row">
+									<label th:if="${param.error}"
+										th:text="${session['SPRING_SECURITY_LAST_EXCEPTION'].message}"
+										class="alert alert-info">message</label>
+								</div>
+								<div class="form-group margin">
+									<input type="text" id="username" name="username"
+										class="form-control " autofocus="autofocus"
+										placeholder="Usuario"
+										onkeyup="this.value = this.value.toUpperCase();">
+								</div>
+								<div class="form-group">
+									<input type="password" id="password" name="password"
+										class="form-control" placeholder="Contraseña">
+								</div>
+								<div class="form-group">
+									<input type="submit" name="login-submit" id="login-submit"
+										class="form-control btn-secondary btn-lg colorbutton buttonone"
+										value="Iniciar sesión">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+img{
+	display: block;
+    margin: auto;
+    margin-top: 10%;
+    width: 66%;
+}
+
+body{
+	background: #ECF0F1;
+} 
+
+.panel{
+	margin-top: 10%;
+}
+
+.form-control {
+    height: 0%;
+    padding: 10px 12px;
+}
+
+.colorbutton{
+	background-color:#7B7C80;
+	color: white;
+}
+
+.form-control:focus {
+    border-color: #7B7C80;
+}
+
+h4{
+	margin-top: 8%;
+	font-family:Gothambold;
+}
+
+.margin{
+  margin-top: 10%;
+}
+
+a{
+	color:black;
+}
+
+.buttonone:hover { 
+    background-color: #007577;
+  
+}

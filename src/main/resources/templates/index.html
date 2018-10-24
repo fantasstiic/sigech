@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org"
+	layout:decorate="~{fragments/layout}">
+<head>
+<title>Index</title>
+<link rel="stylesheet" type="text/css" th:href="@{css/index.css}" />
+</head>
+<body>
+	<div layout:fragment="content" th:remove="tag">
+<script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<image th:src="@{img/logoChihuahua.svg}" />
+			</div>
+			<div class="col-md-6 col-md-offset-3">
+				<h3>Bienvenido</h3>
+				<h4>Selecciona el sistema al que deseas acceder</h4>
+			</div>
+			<div class="col-md-4 col-md-offset-4 ">
+				<a th:href="${SUAC_url}"><button type="button"
+						class="btn btn-secondary btn-lg buttonone">SUAC v2.0</button></a>
+			</div>
+			<div class="col-md-4 col-md-offset-4">
+				<a th:href="@{/sigech/}"><button type="button"
+						class="btn btn-secondary btn-lg buttontwo">SIGECH</button></a>
+			</div>
+			<div class="modal fade bd-example-modal-sm" id="editUserModal"
+				tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog model-sm">
+					<div class="modal-content">
+						<div class="modal-body">
+							<h2>Te has desconectado</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script th:inline="javascript">
+				if(/*[[${param.logout}]]*/){
+					$('#editUserModal').modal('show');
+				}
+			</script>
+		</div>
+	</div>
+</body>
+</html>
+
